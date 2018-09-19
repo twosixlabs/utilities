@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
     Purpose:
         Test Function Execution Timer. Allows for the testimg
@@ -49,10 +48,10 @@ def time_function_execution(units='ms', percision=4):
                     wrapped function is passed through the timing
                     function
         """
-
-        func_start = time.time()
-        func_return = wrapped(*args, **kwargs)
-        func_end = time.time()
+        func_full_name = '{0}->{1}'.format(
+            wrapped.__code__.co_filename, wrapped.__name__
+        )
+        logging.info('Timing Execution of {0}'.format(func_full_name))
 
         unit_func = {
             'ms': lambda x: x * 1000,
@@ -61,10 +60,11 @@ def time_function_execution(units='ms', percision=4):
             'h': lambda x: x / 3600,
         }
 
+        func_start = time.time()
+        func_return = wrapped(*args, **kwargs)
+        func_end = time.time()
         execution_time = unit_func[units](func_end - func_start)
-        func_full_name = '{0}->{1}'.format(
-            wrapped.__code__.co_filename, wrapped.__name__
-        )
+
         logging.info(
             'Execution Time of {func}: {exec_time:.{percision}f} '
             '{units}'.format(
@@ -78,3 +78,4 @@ def time_function_execution(units='ms', percision=4):
         return func_return
 
     return get_function_timing
+
