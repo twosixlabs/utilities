@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
     Purpose:
         Library for wrapping the main() functtion of a Python executable
