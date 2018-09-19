@@ -34,7 +34,7 @@ def time_function_execution(units='ms', percision=4):
     """
 
     @decorator
-    def test_timing_it(wrapped, instance, args, kwargs):
+    def get_function_timing(wrapped, instance, args, kwargs):
         """
             Purpose:
                 TIming wrapping function
@@ -77,4 +77,4 @@ def time_function_execution(units='ms', percision=4):
 
         return func_return
 
-    return test_timing_it
+    return get_function_timing
