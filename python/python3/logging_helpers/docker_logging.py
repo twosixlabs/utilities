@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
     Purpose:
         Library for Logging in Docker. This will utilize the logging
