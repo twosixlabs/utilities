@@ -1,38 +1,25 @@
-#!/usr/bin/env python3
 """
     Purpose:
-        setup.py is executed to build the python project and install
+        setup.py is executed to build the python 3.x project and install
         the libraries as a pip project. This will allow for the libs
         to be included in the Dockerfile of projects utilizing these
         libraries.
-
-    Steps:
-        - N/A
-
-    function call:
-        ./library_tester.py
-"""
-
-"""
-    Purpose:
-        Allows pip install to find required packages and install upon
-        installation of this repository.
 """
 
 from setuptools import setup, find_packages
 
 setup(
     name='twosix_py3',
-    version='1.0.0',
-    python_requires='>3.5',
+    version='1.0.2',
+    python_requires='>=3.0.0',
     description=(
         'TwoSixLabs Python 3.x Resuable Libraries'
     ),
-    url='https://github',
-    author='',
-    author_email='',
+    url='https://github.com/twosixlabs/utilities/python/python3',
+    author='N/A',
+    author_email='N/A',
     classifiers=[
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.x',
     ],
     keywords=['python', 'libraries'],
     packages=[
