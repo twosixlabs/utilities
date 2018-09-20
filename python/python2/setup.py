@@ -1,6 +1,6 @@
 """
     Purpose:
-        setup.py is executed to build the python 3.x project and install
+        setup.py is executed to build the python 2.x project and install
         the libraries as a pip project. This will allow for the libs
         to be included in the Dockerfile of projects utilizing these
         libraries.
@@ -9,17 +9,17 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='twosix_py3',
-    version='1.0.2',
-    python_requires='>=3.0.0',
+    name='twosix_py2',
+    version='1.0.0',
+    python_requires='<3.0.0',
     description=(
-        'TwoSixLabs Python 3.x Resuable Libraries'
+        'TwoSixLabs Python 2.x Resuable Libraries'
     ),
-    url='https://github.com/twosixlabs/utilities/python/python3',
+    url='https://github.com/twosixlabs/utilities/python/python2',
     author='N/A',
     author_email='N/A',
     classifiers=[
-        'Programming Language :: Python :: 3.x',
+        'Programming Language :: Python :: 2.x',
     ],
     keywords=['python', 'libraries'],
     packages=[
