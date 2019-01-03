@@ -16,8 +16,8 @@ setup(
         'TwoSixLabs Python 3.x Resuable Libraries'
     ),
     url='https://github.com/twosixlabs/utilities/python/python3',
-    author='N/A',
-    author_email='N/A',
+    author="Two Six Labs",
+    author_email="magicwand@twosixlabs.com",
     classifiers=[
         'Programming Language :: Python :: 3.x',
     ],
@@ -27,7 +27,7 @@ setup(
         'logging_helpers',
     ],
     install_requires=[
-        'wrapt==1.10.8',
+        'wrapt>=1.10.8',
     ],
     project_urls={},
 )
