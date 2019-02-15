@@ -38,4 +38,4 @@ do
 done
 
 echo "$(date +%c): Building TwoSix Labs Python3.x (Setup File = ${SETUP_FILE})"
-python ${SETUP_FILE} sdist bdist_wheel
+python3 ${SETUP_FILE} sdist bdist_wheel
