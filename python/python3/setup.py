@@ -154,7 +154,7 @@ def main():
         packages=install_packages,
         package_data={"": ["requirements*.txt"]},
         project_urls={},
-        python_requires='<3.0.0',
+        python_requires='>3.0.0',
         setup_requires=setup_requirements,
         tests_require=test_requirements,
         url='https://github.com/twosixlabs/utilities/python/python2',
