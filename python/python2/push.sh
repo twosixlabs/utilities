@@ -6,7 +6,7 @@
 #    ./push.sh --repository=http://localhost:8081/repository/pypi/
 #
 
-REPOSITORY="http://100.75.72.10:8081/repository/mw-pip/"
+REPOSITORY="http://xd3-node-a.twosix.local:8081/repository/mw-pip/"
 USERNAME=""
 PASSWORD=""
 BUILD_DIR="./dist/*"
