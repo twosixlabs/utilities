@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Build TwoSix Labs Python3.x Utilities Package For Pushing to Repository
+# Build TwoSix Labs Python2.x Utilities Package For Pushing to Repository
 #
 # Example Call:
 #    ./build.sh
