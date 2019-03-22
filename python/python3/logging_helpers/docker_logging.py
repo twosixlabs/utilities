@@ -13,7 +13,7 @@ import sys
 def get_docker_logging(
     log_level=logging.INFO,
     log_msg_fmt='%(asctime)s %(levelname)s %(message)s',
-    log_date_fmt='%a, %d %b %Y %H:%M:%S'
+    log_date_fmt='%a, %d %b %Y %H:%M:%S.%f'
 ):
     """
     Purpose:
